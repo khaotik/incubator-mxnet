@@ -17,7 +17,7 @@
 
 """Symbol API of MXNet."""
 
-from . import _internal, contrib, linalg, op, random, sparse, image, symbol, numpy
+from . import _internal, contrib, linalg, op, random, sparse, image, symbol, khaotik, numpy
 # pylint: disable=wildcard-import, redefined-builtin
 try:
     from .gen_op import * # pylint: disable=unused-wildcard-import
@@ -31,4 +31,4 @@ from . import numpy as np
 from . import numpy_extension as npx
 
 __all__ = op.__all__ + symbol.__all__\
-          + ['contrib', 'linalg', 'random', 'sparse', 'image', 'numpy', 'numpy_extension']
+          + ['contrib', 'linalg', 'random', 'sparse', 'image', 'numpy', 'numpy_extension', 'khaotik']
